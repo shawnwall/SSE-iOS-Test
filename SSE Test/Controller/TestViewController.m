@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"SSE Test";
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveSSEData:) name:@"SSEData" object:nil];
 }
 
@@ -38,6 +39,11 @@
 -(void)receiveSSEData:(NSNotification*)notification {
     NSDictionary *userInfo = notification.userInfo;
     self.textView.text = [NSString stringWithFormat:@"%@%@\n", self.textView.text, [userInfo valueForKey:@"data"]];
+}
+
+- (IBAction)pushTest:(id)sender {
+    TestViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"TestViewController"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
