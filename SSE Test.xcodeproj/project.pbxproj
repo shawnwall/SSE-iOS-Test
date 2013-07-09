@@ -16,6 +16,11 @@
 		E534ADA6178C38C0009D7FAC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E534ADA5178C38C0009D7FAC /* Default.png */; };
 		E534ADA8178C38C0009D7FAC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E534ADA7178C38C0009D7FAC /* Default@2x.png */; };
 		E534ADAA178C38C0009D7FAC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E534ADA9178C38C0009D7FAC /* Default-568h@2x.png */; };
+		E534ADB3178C38FE009D7FAC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E534ADB2178C38FE009D7FAC /* MainStoryboard.storyboard */; };
+		E534ADB7178C3BAC009D7FAC /* eventsource.html in Resources */ = {isa = PBXBuildFile; fileRef = E534ADB6178C3BAC009D7FAC /* eventsource.html */; };
+		E534ADBA178C3C03009D7FAC /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E534ADB9178C3C03009D7FAC /* TestViewController.m */; };
+		E534ADBE178C3D70009D7FAC /* EventSourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E534ADBD178C3D70009D7FAC /* EventSourceManager.m */; };
+		E534ADC2178C4139009D7FAC /* NSURL+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E534ADC1178C4139009D7FAC /* NSURL+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,15 @@
 		E534ADA5178C38C0009D7FAC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E534ADA7178C38C0009D7FAC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E534ADA9178C38C0009D7FAC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E534ADB2178C38FE009D7FAC /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E534ADB6178C3BAC009D7FAC /* eventsource.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = eventsource.html; sourceTree = "<group>"; };
+		E534ADB8178C3C03009D7FAC /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		E534ADB9178C3C03009D7FAC /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		E534ADBC178C3D70009D7FAC /* EventSourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventSourceManager.h; sourceTree = "<group>"; };
+		E534ADBD178C3D70009D7FAC /* EventSourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventSourceManager.m; sourceTree = "<group>"; };
+		E534ADC0178C4139009D7FAC /* NSURL+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Additions.h"; sourceTree = "<group>"; };
+		E534ADC1178C4139009D7FAC /* NSURL+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Additions.m"; sourceTree = "<group>"; };
+		E534ADC3178C4913009D7FAC /* sse.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = sse.php; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +92,13 @@
 		E534AD99178C38C0009D7FAC /* SSE Test */ = {
 			isa = PBXGroup;
 			children = (
+				E534ADBF178C4128009D7FAC /* Category */,
+				E534ADBB178C3D51009D7FAC /* Net */,
+				E534ADB1178C38D9009D7FAC /* View */,
+				E534ADB0178C38CA009D7FAC /* Controller */,
 				E534ADA2178C38C0009D7FAC /* AppDelegate.h */,
 				E534ADA3178C38C0009D7FAC /* AppDelegate.m */,
+				E534ADB5178C3B6C009D7FAC /* Resources */,
 				E534AD9A178C38C0009D7FAC /* Supporting Files */,
 			);
 			path = "SSE Test";
@@ -97,6 +116,50 @@
 				E534ADA9178C38C0009D7FAC /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E534ADB0178C38CA009D7FAC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E534ADB8178C3C03009D7FAC /* TestViewController.h */,
+				E534ADB9178C3C03009D7FAC /* TestViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E534ADB1178C38D9009D7FAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E534ADB2178C38FE009D7FAC /* MainStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E534ADB5178C3B6C009D7FAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E534ADB6178C3BAC009D7FAC /* eventsource.html */,
+				E534ADC3178C4913009D7FAC /* sse.php */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E534ADBB178C3D51009D7FAC /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				E534ADBC178C3D70009D7FAC /* EventSourceManager.h */,
+				E534ADBD178C3D70009D7FAC /* EventSourceManager.m */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		E534ADBF178C4128009D7FAC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E534ADC0178C4139009D7FAC /* NSURL+Additions.h */,
+				E534ADC1178C4139009D7FAC /* NSURL+Additions.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +217,8 @@
 				E534ADA6178C38C0009D7FAC /* Default.png in Resources */,
 				E534ADA8178C38C0009D7FAC /* Default@2x.png in Resources */,
 				E534ADAA178C38C0009D7FAC /* Default-568h@2x.png in Resources */,
+				E534ADB3178C38FE009D7FAC /* MainStoryboard.storyboard in Resources */,
+				E534ADB7178C3BAC009D7FAC /* eventsource.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +231,9 @@
 			files = (
 				E534ADA0178C38C0009D7FAC /* main.m in Sources */,
 				E534ADA4178C38C0009D7FAC /* AppDelegate.m in Sources */,
+				E534ADBA178C3C03009D7FAC /* TestViewController.m in Sources */,
+				E534ADBE178C3D70009D7FAC /* EventSourceManager.m in Sources */,
+				E534ADC2178C4139009D7FAC /* NSURL+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
